@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile">
+            <button onclick="toggleMenu()" id="menuMobile">=</button>
+          </div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="./index.html" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span><img src="./assets/icons/1.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/4.svg" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <img
+        src="https://picsum.photos/id/10/1440/500"
+        alt=""
+        class="banner__img"
+      />
+    </section>
+    <!--End .banner-->
+    <section class="menuShop">
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+          <span><img src="./assets/next.svg" alt="" /></span>
+        </li>
+        <li>
+          <a href="./cart.html">Shop</a>
+          <span><img src="./assets/next.svg" alt="" /></span>
+        </li>
+        <div class="menuShop_title">
+          <a class="menuShop_name" href="#">Asgaard sofa</a>
+        </div>
+      </ul>
+    </section>
+    <!-- And.Sreach  -->
+    <div class="container">
+      <div class="product-detail">
+        <div class="product-detail__img">
+          <div
+            class="product-detail__imgcon"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            <img src="./assets/Asgaard sofa 3.svg" alt="" />
+            <img src="./assets/Asgaard sofa 3.svg" alt="" />
+            <img src="./assets/Asgaard sofa 3.svg" alt="" />
+            <img src="./assets/Asgaard sofa 3.svg" alt="" />
+          </div>
+          <div
+            class="product-detail__imgAvt"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            <img src="./assets/Asgaard sofa 3.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="product-detail__conten"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+        >
+          <div class="product-detail__name">Asgaard sofa</div>
+          <div class="product-detail__price">25.000.000đ</div>
+          <div class="product-detail__review">
+            <img src="./assets/product_start.svg" alt="" />
+            <div class="product-detail__review_start">5 Customer Review</div>
+          </div>
+          <div
+            class="product-detail__Textconten"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            Setting the bar as one of the loudest speakers in its class, the
+            Kilburn is a compact, stout-hearted hero with a well-balanced audio
+            which boasts a clear midrange and extended highs for a sound.
+          </div>
+          <div class="product-detail__sizeFull">
+            <div
+              class="product-detail__size"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              Size
+            </div>
+            <div
+              class="product-detail__fullsize"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              <button>L</button>
+              <button>XL</button>
+              <button>XS</button>
+            </div>
+          </div>
+          <div class="product-detail__sizeFull">
+            <div
+              class="product-detail__size"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              Color
+            </div>
+            <div
+              class="product-detail__color"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              <button class="product-detail__color-violet"></button>
+              <button class="product-detail__color-black"></button>
+              <button class="product-detail__color-yellow"></button>
+            </div>
+          </div>
+          <!-- End. COlor -->
+          <div class="product-detail__addCart">
+            <form
+              class="product-detail__addCart-form"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              <div class="product-detail__addCart-qunanlity">
+                <input type="text" />
+              </div>
+              <div class="product-detail__addCart-product">
+                <button type="submit">Add To Cart</button>
+              </div>
+              <div class="product-detail__addCart-Compare">
+                <button type="submit">+ Compare</button>
+              </div>
+            </form>
+          </div>
+          <!-- ENd add Cart -->
+
+          <div
+            class="product-detail__Share"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            <div class="product-detail__Share-sku">
+              <span class="product-detail__Share-title">SKU</span>
+              <span>: SS001</span>
+            </div>
+            <div class="product-detail__Share-Category">
+              <span class="product-detail__Share-title">Category</span>
+              <span>: Sofas</span>
+            </div>
+            <div class="product-detail__Share-Tags">
+              <span class="product-detail__Share-title">Tags</span>
+              <span>: Sofa, Chair, Home, Shop</span>
+            </div>
+            <div class="product-detail__Share-Share">
+              <span class="product-detail__Share-title">Share</span>
+              <span class="product-detail__Share-Share__icon"
+                >: <img src="./assets/fb.svg" alt="a" /><img
+                  src="./assets/inta.svg"
+                  alt="a" /><img src="./assets/tiwter.svg" alt="a"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END . Products Detail -->
+    </div>
+    <section class="duongke"></section>
+
+    <!-- ======== Description============= -->
+    <section class="container">
+      <div class="Description">
+        <div class="Description__conten">
+          <ul class="Description__conten-menu">
+            <li>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                class="Description__conten-menu__link"
+                href="#"
+                >Description</a
+              >
+            </li>
+            <li>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                class="Description__conten-menu__linkk"
+                href=""
+                >Additional Information</a
+              >
+            </li>
+            <li>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                class="Description__conten-menu__linkk"
+                href=""
+                >Reviews [5]</a
+              >
+            </li>
+          </ul>
+          <div
+            class="Description__conten-Compact"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn
+            portable active stereo speaker takes the unmistakable look and sound
+            of Marshall, unplugs the chords, and takes the show on the road.
+          </div>
+          <div
+            class="Description__conten-CompactDetail"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+            vintage styled engineering. Setting the bar as one of the loudest
+            speakers in its class, the Kilburn is a compact, stout-hearted hero
+            with a well-balanced audio which boasts a clear midrange and
+            extended highs for a sound that is both articulate and pronounced.
+            The analogue knobs allow you to fine tune the controls to your
+            personal preferences while the guitar-influenced leather strap
+            enables easy and stylish travel.
+          </div>
+        </div>
+        <div class="Description__img">
+          <div
+            class="Description__img-deatail"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            <img src="./assets/productDetail.svg" alt="" />
+          </div>
+          <div
+            class="Description__img-deatail22"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            <img src="./assets/productDetail22.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== End. Description============= -->
+
+    <!-- +++++++++++++Product+++++++++++++++ -->
+    <section class="news">
+      <div class="title__products" data-aos="fade-up" data-aos-duration="1400">
+        <h1>Related Products</h1>
+      </div>
+
+      <div class="container">
+        <div class="section-body">
+          <div class="product-list">
+            <div
+              class="product-item"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div
+              class="product-item"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div
+              class="product-item"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div
+              class="product-item"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-new">New</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+          </div>
+        </div>
+        <div class="btn_ShowMore" data-aos="fade-up" data-aos-duration="1400">
+          <button>Show More</button>
+        </div>
+      </div>
+    </section>
+    <!-- =================end. product =========== -->
+
+    <!--End .services-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      function toggleMenu() {
+        const menuMobile = document.querySelector(".main-menu");
+        if (menuMobile.style.display === "block") {
+          menuMobile.style.display = "none";
+        } else {
+          menuMobile.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

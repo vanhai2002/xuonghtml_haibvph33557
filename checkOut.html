@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile">
+            <button onclick="toggleMenu()" id="menuMobile">=</button>
+          </div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="./index.html" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./shop.html" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span><img src="./assets/icons/1.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/4.svg" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner" style="position: relative">
+      <img
+        style="opacity: 0.5"
+        src="https://picsum.photos/id/10/1440/500"
+        alt=""
+        class="banner__img"
+      />
+      <img src="./assets/checkout.svg" alt="" class="overlay-img" />
+      <ul class="ul">
+        <li class="li">
+          <a class="link" href="#">Home</a>
+          <img src="./assets/next.svg" alt="" />
+        </li>
+        <li class="li">
+          <a class="link" href="#">Checkout</a>
+        </li>
+      </ul>
+    </section>
+    <!-- Bill  -->
+    <section class="container">
+      <div class="bill-full">
+        <div class="bill-full__detail">
+          <!-- Form bill -->
+          <form>
+            <h1>Billing details</h1>
+            <div class="bill-full__detail-fullname">
+              <div class="bill-full__detail-Firstname">
+                <h3>First Name</h3>
+                <input type="text" />
+              </div>
+              <div class="bill-full__detail-Lastname">
+                <h3>Last Name</h3>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="bill-full__detail-CompanyName">
+              <h3>Company Name (Optional)</h3>
+              <input type="text" />
+            </div>
+            <div class="bill-full__detail-CompanyName">
+              <h3>Country / Region</h3>
+              <select name="" id="">
+                <option value="Sri Lanka">Sri Lanka</option>
+              </select>
+            </div>
+            <div class="bill-full__detail-CompanyName">
+              <h3>Street address</h3>
+              <input type="text" />
+            </div>
+            <div class="bill-full__detail-CompanyName">
+              <h3>Town / City</h3>
+              <input type="text" />
+            </div>
+            <div class="bill-full__detail-CompanyName">
+              <h3>Province</h3>
+              <select name="" id="">
+                <option value="Sri Lanka">Western Province</option>
+              </select>
+            </div>
+            <div class="bill-full__detail-CompanyName">
+              <h3>ZIP code</h3>
+              <input type="text" />
+            </div>
+            <div class="bill-full__detail-CompanyName">
+              <h3>Phone</h3>
+              <input type="text" />
+            </div>
+            <div class="bill-full__detail-CompanyName">
+              <h3>Email address</h3>
+              <input type="text" />
+            </div>
+            <div class="bill-full__detail-CompanyName nam">
+              <select name="" id="">
+                <option value="Sri Lanka">Additional information</option>
+              </select>
+            </div>
+          </form>
+          <!-- Form bill -->
+        </div>
+        <div class="bill-full__total">
+          <div class="bill-full-product">
+            <div class="bill-full__total-name">
+              <h3>Product</h3>
+              <span>Subtotal</span>
+            </div>
+            <div class="bill-full__total-name">
+              <div class="bill-full__total-name__product">
+                Asgaard sofa <span>x1</span>
+              </div>
+              <div class="bill-full__total-price__product">25.000.000đ</div>
+            </div>
+            <!-- Name san pham and price -->
+            <div class="bill-full__total-name">
+              <div class="bill-full__total-product">Subtotal</div>
+              <div class="bill-full__total-price__product">25.000.000đ</div>
+            </div>
+            <div class="bill-full__total-name">
+              <div class="bill-full__total-text">Total</div>
+              <div class="bill-full__total-bill">250.00.000đ</div>
+            </div>
+          </div>
+          <div class="bill-full__radio">
+            <input type="radio" /><span>Direct Bank Transfer</span>
+          </div>
+          <div class="bill-full__textconten">
+            Make your payment directly into our bank account. Please use your
+            Order ID as the payment reference. Your order will not be shipped
+            until the funds have cleared in our account.
+          </div>
+          <div class="bill-full__check">
+            <input type="radio" /><span>Direct Bank Transfer</span>
+          </div>
+          <div class="bill-full__check">
+            <input type="radio" /><span>Cash On Delivery</span>
+          </div>
+          <div class="bill-full_ship">
+            Your personal data will be used to support your experience
+            throughout this website, to manage access to your account, and for
+            other purposes described in our <span> privacy policy.</span>
+          </div>
+          <div class="bill-full__btn">
+            <button>Place order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End. Bill -->
+    <!--End .services-->
+    <section class="services">
+      <div class="container-fluid">
+        <div class="service-list">
+          <div class="service-item">
+            <img src="./assets/icons/10.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/11.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/12.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/13.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+        </div>
+      </div>
+    </section>
+    <!--End .services-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      function toggleMenu() {
+        const menuMobile = document.querySelector(".main-menu");
+        if (menuMobile.style.display === "block") {
+          menuMobile.style.display = "none";
+        } else {
+          menuMobile.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
